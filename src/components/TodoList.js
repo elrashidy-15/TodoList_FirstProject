@@ -64,13 +64,14 @@ export default function TodoList() {
   return (
     <Container maxWidth="sm">
       <Card
-        sx={{ minWidth: 275 }}
-        style={{
-          maxHeight: "80vh",
-          overflow: "scroll",
-        }}
+        style={
+          {
+            maxHeight: "80vh",
+            overflow: "scroll",
+          }
+        }
       >
-        <CardContent>
+        <CardContent sx={{ flexGrow: 1 , overflow:"auto "}}>
           <Typography variant="h2">مهامي</Typography>
           <Divider variant="middle" />
           <ToggleButtonGroup

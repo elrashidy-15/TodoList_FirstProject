@@ -56,7 +56,7 @@
   -o-transition: 0.3s ease !important;
 }
 .todo-card:hover {
-  padding: 10px 0px !important;
+  padding: 5px 0px !important;
   box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -80,3 +80,4 @@
   src: url('../public/fonts/Cairo-Medium.ttf') format('truetype');
   font-weight: 500;
 }
+

@@ -150,16 +150,21 @@ export default function Todo({ todo }) {
       <Card
         className="todo-card"
         sx={{
-          minWidth: 275,
           backgroundColor: "#000e87",
           color: "white",
           marginTop: "5px",
         }}
       >
-        <CardContent>
+        <CardContent sx={{ flexGrow: 1 , overflow:"auto "}}>
           <Grid container spacing={2}>
             <Grid size={8}>
-              <Typography variant="h5" sx={{ textAlign: "right" , textDecoration: todo.isCompleted ? "line-through" : "none"}}>
+              <Typography
+                variant="h6"
+                sx={{
+                  textAlign: "right",
+                  textDecoration: todo.isCompleted ? "line-through" : "none",
+                }}
+              >
                 {todo.title}
               </Typography>
               <Typography variant="h6" sx={{ textAlign: "right" }}>
